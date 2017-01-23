@@ -1,7 +1,9 @@
 "use strict";
 import React from 'react'
 import ReactDOM from 'react-dom'
+import App from './components/main.jsx'
+
 ReactDOM.render(
-  <h1>You Really Did It!!</h1>,
+  <App/>,
   document.getElementById('app')
 )
