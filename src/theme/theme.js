@@ -9,16 +9,16 @@ export default {
   zIndex: zIndex,
   fontFamily: 'Quattrocento, sans-serif',
   palette: {
-    primary1Color: Colors.teal900,
-    primary2Color: Colors.teal700,
-    primary3Color: Colors.teal50,
+    primary1Color: Colors.blue900,
+    primary2Color: Colors.blue700,
+    primary3Color: Colors.blue50,
     accent1Color: Colors.blueGrey600,
     accent2Color: Colors.blueGrey400,
     accent3Color: Colors.blueGrey100,
-    textColor: Colors.teal900,
+    textColor: Colors.blue900,
     alternateTextColor: Colors.white,
     canvasColor: Colors.white,
     borderColor: Colors.grey300,
-    pickerHeaderColor: Colors.teal900,
+    pickerHeaderColor: Colors.blue900,
   }
 };
