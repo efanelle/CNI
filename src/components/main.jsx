@@ -8,20 +8,25 @@ import Jumbo from './jumbo.jsx'
 class App extends React.Component {
   constructor(props){
     super(props);
-  // //   this.state = {
-  // //     videos: [],
-  // //     currVid: window.exampleVideoData[0]
-  // //   };
+    this.state = {
+      page: 'home'
+    };
+  }
+  onClick(button) {
+    this.setState({page: button})
   }
 
   render(){
-    return(
-      <div>
-        <Navi />
-        <Jumbo />
-      </div>
-    );
-  }
+      return(
+        <div>
+          <Navi nav={this.state} onClick={this.onClick.bind(this)}/>
+          <div className="main">
+            <Jumbo />
+            <PicCarousel />
+          </div>
+        </div>
+      );
+    }
 }
 
         // <PicCarousel />

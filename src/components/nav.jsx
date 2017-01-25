@@ -16,30 +16,30 @@ function handleSelect(selectedKey) {
   return selectedKey;
 }
 
-// const styles = {
-//   h1: {
-//     display: 'inline',
-//   },
-// };
 
-const Navi = () => (
-  // <MuiThemeProvider muiTheme= {getMuiTheme(MyTheme)}>
-  //   <AppBar
-  //     className= 'AppBar'
-  //     title="Caribbean Nearshoring Initiative"
-  //     onTouchTap={handleTouchTap}
-  //   />
-  // </MuiThemeProvider>
+class Navi extends React.Component {
+    constructor(props){
+    super(props);
+    console.log(props.nav);
+  }
 
+  childOnClick(button) {
+    this.props.onClick.bind(null, button)
+    console.log(this.props)
+  }
 
-    <Nav bsStyle="pills" activeKey={handleSelect} onSelect={handleSelect}>
-      <NavItem eventKey={1} href="/home">CNI</NavItem>
-      <NavItem eventKey={2} title="Item">About Us</NavItem>
-      <NavItem eventKey={3}>Contact Us</NavItem>
-    </Nav>
-
-
-)
+    
+  render(){    
+    return (    
+      <Nav bsStyle="pills" activeKey={'home'} onSelect={handleSelect}>
+            <NavItem eventKey={'home'} href="/home">CNI</NavItem>
+            <NavItem eventKey={'about'} href ="#about" onClick={this.props.onClick.bind(null, 'about')} title="about">About Us</NavItem>
+            <NavItem eventKey={'services'} onClick={this.childOnClick.bind(this)} title="services">Services</NavItem>
+            <NavItem eventKey={'contact'} title="contact">Contact Us</NavItem>
+          </Nav>
+    )
+  }
+}
 
 
 
