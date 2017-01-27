@@ -7,7 +7,6 @@ const Jumbo = () => (
   <Jumbotron>
     <h1>Caribbean Nearshoring Initiative</h1>
     <p>Some sort of tagline explaining what you do</p>
-    // <p><Button bsStyle="primary">Learn more</Button></p>
   </Jumbotron>
 );
 

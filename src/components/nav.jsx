@@ -20,23 +20,22 @@ function handleSelect(selectedKey) {
 class Navi extends React.Component {
     constructor(props){
     super(props);
-    console.log(props.nav);
   }
 
-  childOnClick(button) {
-    this.props.onClick.bind(null, button)
-    console.log(this.props)
+  childOnClick(e) {
+    var page = e.currentTarget.title
+    this.props.onClick.call(null, page)
   }
-
+// {this.props.onClick.bind(null, 'about')
     
   render(){    
     return (    
       <Nav bsStyle="pills" activeKey={'home'} onSelect={handleSelect}>
-            <NavItem eventKey={'home'} href="/home">CNI</NavItem>
-            <NavItem eventKey={'about'} href ="#about" onClick={this.props.onClick.bind(null, 'about')} title="about">About Us</NavItem>
-            <NavItem eventKey={'services'} onClick={this.childOnClick.bind(this)} title="services">Services</NavItem>
-            <NavItem eventKey={'contact'} title="contact">Contact Us</NavItem>
-          </Nav>
+        <NavItem eventKey={'home'} href="/home" onClick={this.childOnClick.bind(this)} title='home'>CNI</NavItem>
+        <NavItem eventKey={'about'} href ="#about" onClick={this.childOnClick.bind(this)} title="about">About Us</NavItem>
+        <NavItem eventKey={'services'} onClick={this.childOnClick.bind(this)} title="services">Services</NavItem>
+        <NavItem eventKey={'contact'} onClick={this.childOnClick.bind(this)} title="contact">Contact Us</NavItem>
+      </Nav>
     )
   }
 }
