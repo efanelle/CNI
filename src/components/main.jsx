@@ -8,6 +8,7 @@ import Reshore from './reshore.jsx'
 import Nearshore from './nearshore.jsx'
 import Services from './services.jsx'
 import CNI from './whyCNI.jsx'
+import Contact from './contact.jsx'
 
 
 
@@ -15,12 +16,19 @@ class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      page: 'home'
+      page: 'home',
+      showModal: false
     };
   }
   onClick(button) {
     console.log(button)
     this.setState({page: button})
+  }
+  close() {
+    this.setState({ showModal: false });
+  }
+  open() {
+    this.setState({ showModal: true });
   }
 
   render(){
@@ -70,8 +78,8 @@ class App extends React.Component {
     } else if(this.state.page === 'contact') {
       return(
         <div>
-          <Navi nav={this.state} onClick={this.onClick.bind(this)}/>
-          <h1> This will be filled with information about how to contact us!</h1>
+          <Navi open={this.open.bind(this)} nav={this.state} onClick={this.onClick.bind(this)}/>
+          <Contact />
         </div>
       );
     } 

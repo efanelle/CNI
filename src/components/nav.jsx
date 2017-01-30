@@ -30,6 +30,7 @@ class Navi extends React.Component {
     
   render(){    
     return (   
+      <div>
         <Nav bsStyle="pills" activeKey={'home'} onSelect={handleSelect}>
           <NavItem eventKey={'home'} href="/home" onClick={this.childOnClick.bind(this)} title='home'>CNI</NavItem>
           <NavItem eventKey={'offshore'} onClick={this.childOnClick.bind(this)} title="offshore">Offshoring Option</NavItem>
@@ -39,6 +40,7 @@ class Navi extends React.Component {
           <NavItem eventKey={'services'} onClick={this.childOnClick.bind(this)} title="services">Services</NavItem>
           <NavItem eventKey={'contact'} onClick={this.childOnClick.bind(this)} title="contact">Contact Us</NavItem>
         </Nav>
+      </div>
     )
   }
 }
