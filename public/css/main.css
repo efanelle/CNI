@@ -1,5 +1,60 @@
+#boldNess {
+  opacity: 1;
+}
 
+.carousel-inner>.item>img {
+  width:80%;
+  margin-left:10%
+}
+.center {
+  text-align: center;
+}
 
-.logo {
-  color:blue;
+.home {
+  background-color:#337ab7
+}
+.icon {
+  height: 8%;
+  width: 8%;
+  padding-bottom: 2%;
+}
+.jumbotron {
+  padding-left:2%;
+  padding-bottom:2%;
+}
+
+.mainInfo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  font-size: 1.5em;
+  margin-left:1%;
+  text-align:center;  
+}
+.nav {
+  margin-bottom: 1%;
+}
+.nearshore {
+  background:url("/assets/drmap2.png") no-repeat center center;
+  background-size:100%;
+}
+/*.odd {
+  background-color:#337ab7;
+}*/
+.offshore {
+  background:url("/assets/chinamap.png") no-repeat center center;
+  background-size:100%;
+}
+.prosandcons {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:flex-start;
+  align-content:space-around;
+}
+.reshore {
+  background:url("/assets/usamap1.png") no-repeat center center;
+  background-size:100%;
+}
+.sub {
+  width: 40%;
+  margin: 0 auto;
 }

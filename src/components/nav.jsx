@@ -4,7 +4,7 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MyTheme from '../theme/theme.js'
 import AppBar from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
-import {Nav, NavItem} from 'react-bootstrap'
+import {Nav, NavItem, Navbar} from 'react-bootstrap'
 
 
 
@@ -29,13 +29,16 @@ class Navi extends React.Component {
 // {this.props.onClick.bind(null, 'about')
     
   render(){    
-    return (    
-      <Nav bsStyle="pills" activeKey={'home'} onSelect={handleSelect}>
-        <NavItem eventKey={'home'} href="/home" onClick={this.childOnClick.bind(this)} title='home'>CNI</NavItem>
-        <NavItem eventKey={'about'} href ="#about" onClick={this.childOnClick.bind(this)} title="about">About Us</NavItem>
-        <NavItem eventKey={'services'} onClick={this.childOnClick.bind(this)} title="services">Services</NavItem>
-        <NavItem eventKey={'contact'} onClick={this.childOnClick.bind(this)} title="contact">Contact Us</NavItem>
-      </Nav>
+    return (   
+        <Nav bsStyle="pills" activeKey={'home'} onSelect={handleSelect}>
+          <NavItem eventKey={'home'} href="/home" onClick={this.childOnClick.bind(this)} title='home'>CNI</NavItem>
+          <NavItem eventKey={'offshore'} onClick={this.childOnClick.bind(this)} title="offshore">Offshoring Option</NavItem>
+          <NavItem eventKey={'reshore'} onClick={this.childOnClick.bind(this)} title="reshore">Reshoring Option</NavItem>
+          <NavItem eventKey={'nearshore'} onClick={this.childOnClick.bind(this)} title="nearshore">Nearshoring Option</NavItem>        
+          <NavItem eventKey={'cni'} onClick={this.childOnClick.bind(this)} title="cni">Why CNI?</NavItem>                  
+          <NavItem eventKey={'services'} onClick={this.childOnClick.bind(this)} title="services">Services</NavItem>
+          <NavItem eventKey={'contact'} onClick={this.childOnClick.bind(this)} title="contact">Contact Us</NavItem>
+        </Nav>
     )
   }
 }
