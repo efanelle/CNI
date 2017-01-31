@@ -62,3 +62,7 @@
   width: 40%;
   margin: 0 auto;
 }
+
+.sub li {
+  font-size: 1.4em;
+}
