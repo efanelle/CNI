@@ -1,7 +1,6 @@
 #boldNess {
   opacity: 1;
 }
-
 .carousel-inner>.item>img {
   width:80%;
   margin-left:10%
@@ -62,7 +61,6 @@
   width: 40%;
   margin: 0 auto;
 }
-
 .sub li {
   font-size: 1.4em;
 }
