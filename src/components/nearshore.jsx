@@ -6,7 +6,7 @@ const Nearshore = () => (
     <Jumbotron className="nearshore"> 
     <p id="header">Nearshoring Option </p>
     <p>The transfer of business processes to companies in a nearby country, where both parties
-    expect to benefit from one of more of the following dimensions in proximity: geographic,
+    expect to benefit from one or more of the following dimensions in proximity: geographic,
     temporal (time zone), cultural, linguistic, economic, political, or historial linkages.</p>
     </Jumbotron>
     <div className = "prosandcons">
