@@ -2,7 +2,9 @@ body {
   background-color: #71C6C2
 }
 button {
-  margin-left:1%;
+  margin-right:1%;
+  float:right;
+  margin-bottom: 4%;
 }
 a {
   color:#015249;
@@ -29,6 +31,25 @@ a {
   width: 8%;
   padding-bottom: 2%;
 }
+.images {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  align-content:space-around;
+}
+.images img {
+  width:100%;
+  flex-grow: 1;
+  align-content: space-between;
+  justify-content:center;
+  height:350px;
+}
+/*img:hover {
+  z-index:100;
+  /*width:200%;*/
+  
+/*}*/
 .jumbotron {
   padding-left:2%;
   padding-bottom:2%;
@@ -95,9 +116,9 @@ a {
 .prosandcons {
   display:flex;
   flex-direction: row;
-  /*justify-content: center;*/
-  align-items:flex-start;
-  /*align-content:space-around;*/
+  justify-content: center;
+  /*align-items:flex-start;*/
+  align-content:space-around;
 }
 .reshore {
   background:url("/assets/usamap2.png") no-repeat center center;
@@ -118,4 +139,11 @@ a {
 }
 .sub li {
   font-size: 1.2em;
+}
+.sub1 {
+  width: 40%;
+  margin: 0 auto;
+  /*flex-grow:0;*/
+  font-size:1.5em;
+
 }

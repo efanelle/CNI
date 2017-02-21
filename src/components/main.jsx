@@ -8,7 +8,7 @@ import Reshore from './reshore.jsx'
 import Nearshore from './nearshore.jsx'
 import Services from './services.jsx'
 import CNI from './whyCNI.jsx'
-import Contact from './contact.jsx'
+import About from './about.jsx'
 
 
 
@@ -75,11 +75,11 @@ class App extends React.Component {
           <PicCarousel />
         </div>
       );
-    } else if(this.state.page === 'contact') {
+    } else if(this.state.page === 'about') {
       return(
         <div>
           <Navi open={this.open.bind(this)} nav={this.state} onClick={this.onClick.bind(this)}/>
-          <Contact />
+          <About />
         </div>
       );
     } 

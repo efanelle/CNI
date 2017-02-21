@@ -9,6 +9,8 @@ const pic4 = "./assets/DR4.jpg";
 const pic5 = "./assets/DR5.jpg";
 const pic6 = "./assets/DR6.jpg";
 const pic7 = "./assets/DR7.jpg";
+const pic8 = "./assets/DR8.jpg";
+const pic9 = "./assets/DR9.jpg";
 
 // class PicCarousel extends React.Component {
 const PicCarousel = () => (
@@ -33,7 +35,13 @@ const PicCarousel = () => (
     </Carousel.Item>
     <Carousel.Item>
       <img width={1000} height={500} alt="900x500" src={pic5}/>
-    </Carousel.Item>    
+    </Carousel.Item>
+    <Carousel.Item>
+      <img width={1000} height={500} alt="900x500" src={pic8}/>
+    </Carousel.Item> 
+    <Carousel.Item>
+      <img width={1000} height={500} alt="900x500" src={pic9}/>
+    </Carousel.Item>     
   </Carousel>
 )
       // <Carousel.Caption>
