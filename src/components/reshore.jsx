@@ -4,7 +4,7 @@ import {Jumbotron} from 'react-bootstrap'
 const Reshore = () => (
   <div>
     <Jumbotron className="reshore"> 
-    <h2>Reshoring Option </h2>
+    <p id="header">Reshoring Option </p>
     <p>Reshoring, which is also known as 'onshoring', 'inshoring', and 'backshoring' is the act
     of reintroducing domestic manufacturing to a country.  It is the reverse process of offshoring,
     where manufacturing is moved to another country where labor is cheaper.</p>

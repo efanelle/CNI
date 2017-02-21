@@ -30,8 +30,8 @@ class Navi extends React.Component {
     
   render(){    
     return (   
-      <div>
-        <Nav bsStyle="pills" activeKey={'home'} onSelect={handleSelect}>
+      <div className='navbar'>
+        <Nav bsStyle="tabs" activeKey={'home'} onSelect={handleSelect}>
           <NavItem eventKey={'home'} href="/home" onClick={this.childOnClick.bind(this)} title='home'>CNI</NavItem>
           <NavItem eventKey={'offshore'} onClick={this.childOnClick.bind(this)} title="offshore">Offshoring Option</NavItem>
           <NavItem eventKey={'reshore'} onClick={this.childOnClick.bind(this)} title="reshore">Reshoring Option</NavItem>

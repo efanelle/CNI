@@ -5,7 +5,7 @@ import { Jumbotron, Button } from 'react-bootstrap'
 
 const Services = () => (
   <Jumbotron>
-    <h2>Caribbean Nearshoring Initiative</h2>
+    <p className="smallhd">Caribbean Nearshoring Initiative</p>
     <p><strong>Manpower</strong> is our resource, <em>management</em> is our strength</p>
   </Jumbotron>
 );

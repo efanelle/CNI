@@ -1,6 +1,7 @@
 import React from 'react';
-import {Modal, Popover, Tooltip, Button, OverlayTrigger, PageHeader, Panel} from 'react-bootstrap'
+import {Modal, Popover, Tooltip, Button, OverlayTrigger, PageHeader, Jumbotron, Panel} from 'react-bootstrap'
 
+const pic6 = "./assets/DR6.jpg";
 
 const Contact = React.createClass({
   getInitialState() {
@@ -16,7 +17,7 @@ const Contact = React.createClass({
   },
 
   render() {
-    const popover = (
+    /*const popover = (
       <Popover id="modal-popover" title="popover">
         very popover. such engagement
       </Popover>
@@ -25,16 +26,18 @@ const Contact = React.createClass({
       <Tooltip id="modal-tooltip">
         wow.
       </Tooltip>
-    );
+    );*/
 
     return (
       <div>
         <div className="list">
-        <PageHeader >Next Steps</PageHeader>
-        <Panel>Plug our labor rates into your financial model</Panel>
-        <Panel>Develop cost model to determine competitive potential</Panel>
-        <Panel>Have your product or process evaluated </Panel>
-        <Panel>Identify best approach to maximize your profitability
+        <Jumbotron> 
+          <p className="smallhd">Next Steps</p>
+        </Jumbotron>
+        <Panel>1.   Plug our labor rates into your financial model</Panel>
+        <Panel>2.   Develop cost model to determine competitive potential</Panel>
+        <Panel>3.   Have your product or process evaluated </Panel>
+        <Panel>4.   Identify best approach to maximize your profitability
           <ul>
           <li>Manual Operations</li>
             <ul>
@@ -48,7 +51,6 @@ const Contact = React.createClass({
           </Panel>
           <br />
         <Button
-          bsStyle="primary"
           bsSize="large"
           onClick={this.open}
         >

@@ -4,7 +4,7 @@ import {Jumbotron} from 'react-bootstrap'
 const Nearshore = () => (
   <div>
     <Jumbotron className="nearshore"> 
-    <h2>Nearshoring Option </h2>
+    <p id="header">Nearshoring Option </p>
     <p>The transfer of business processes to companies in a nearby country, where both parties
     expect to benefit from one of more of the following dimensions in proximity: geographic,
     temporal (time zone), cultural, linguistic, economic, political, or historial linkages.</p>

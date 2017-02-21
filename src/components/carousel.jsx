@@ -14,25 +14,25 @@ const pic7 = "./assets/DR7.jpg";
 const PicCarousel = () => (
   <Carousel>
     <Carousel.Item>
-      <img className="carouselPic" width={1000} height={500} alt="900x500" src={pic1}/>
-    </Carousel.Item>
-    <Carousel.Item>
-      <img width={1000} height={500} alt="900x500" src={pic2}/>
+      <img className="carouselPic" width={1000} height={500} alt="900x500" src={pic6}/>
     </Carousel.Item>
     <Carousel.Item>
       <img width={1000} height={500} alt="900x500" src={pic3}/>
+    </Carousel.Item>
+    <Carousel.Item>
+      <img width={1000} height={500} alt="900x500" src={pic1}/>
+    </Carousel.Item>
+    <Carousel.Item>
+      <img width={1000} height={500} alt="900x500" src={pic7}/>
+    </Carousel.Item>
+    <Carousel.Item>
+      <img width={1000} height={500} alt="900x500" src={pic2}/>
     </Carousel.Item>
     <Carousel.Item>
       <img width={1000} height={500} alt="900x500" src={pic4}/>
     </Carousel.Item>
     <Carousel.Item>
       <img width={1000} height={500} alt="900x500" src={pic5}/>
-    </Carousel.Item>
-    <Carousel.Item>
-      <img width={1000} height={500} alt="900x500" src={pic6}/>
-    </Carousel.Item>
-    <Carousel.Item>
-      <img width={1000} height={500} alt="900x500" src={pic7}/>
     </Carousel.Item>    
   </Carousel>
 )
