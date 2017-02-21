@@ -36,9 +36,9 @@ const PicCarousel = () => (
     <Carousel.Item>
       <img width={1000} height={500} alt="900x500" src={pic5}/>
     </Carousel.Item>
-    <Carousel.Item>
+    {/*<Carousel.Item>
       <img width={1000} height={500} alt="900x500" src={pic8}/>
-    </Carousel.Item> 
+    </Carousel.Item> */}
     <Carousel.Item>
       <img width={1000} height={500} alt="900x500" src={pic9}/>
     </Carousel.Item>     
