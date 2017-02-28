@@ -9,7 +9,7 @@ const time = './assets/time.png'
 const Home = () => (
   <div>
     <Jumbotron className="home">
-      <h1>Caribbean Nearshoring Initiative</h1>
+      <h1>USA Nearshoring Management</h1>
       <h2>The China Alternative</h2>
       <p>Bring your production back to the USA using competitive labor alternatives.  
       Let us show you how.</p>
