@@ -1,7 +1,7 @@
 import React from 'react'
 import {Jumbotron, PageHeader, Panel, Accordion, Well} from 'react-bootstrap'
 
-const CNI = () => (
+const USA = () => (
   <div>
     <Jumbotron>
     <p className="smallhd">Why choose USA Nearshoring Management?</p>
@@ -10,7 +10,7 @@ const CNI = () => (
       <div className="list">
         <Panel header="Opportunity Knocks" eventKey="0">
         {/*<div className = "opportunity">*/}
-        <p>CNI offers a turnkey solution to labor intensive or simple assembly
+        <p>USA Nearshoring Management offers a turnkey solution to labor intensive or simple assembly
         operations in the Caribbean (Nearshoring). </p>
         <p>The key to successful Caribbean Operations 
         is talented, trained, experienced personnel and management. </p>

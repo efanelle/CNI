@@ -64,7 +64,7 @@ class App extends React.Component {
       return(
         <div>
           <Navi nav={this.state} onClick={this.onClick.bind(this)}/>
-          <CNI />
+          <USA />
         </div>
       );
     } else if(this.state.page === 'services') {
