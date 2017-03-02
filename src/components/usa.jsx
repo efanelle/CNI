@@ -4,7 +4,7 @@ import {Jumbotron, PageHeader, Panel, Accordion, Well} from 'react-bootstrap'
 const CNI = () => (
   <div>
     <Jumbotron>
-    <p className="smallhd">Why choose Caribbean Nearshoring Initiative?</p>
+    <p className="smallhd">Why choose USA Nearshoring Management?</p>
     <p>     </p>
     </Jumbotron>
       <div className="list">
@@ -43,4 +43,4 @@ const CNI = () => (
   </div>
 );
 
-module.exports = CNI;
+module.exports = USA;

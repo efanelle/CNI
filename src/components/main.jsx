@@ -7,7 +7,7 @@ import Offshore from './offshore.jsx'
 import Reshore from './reshore.jsx'
 import Nearshore from './nearshore.jsx'
 import Services from './services.jsx'
-import CNI from './whyCNI.jsx'
+import USA from './usa.jsx'
 import About from './about.jsx'
 
 
@@ -60,7 +60,7 @@ class App extends React.Component {
           <Nearshore />
         </div>
       );
-    } else if(this.state.page === 'cni') {
+    } else if(this.state.page === 'usa') {
       return(
         <div>
           <Navi nav={this.state} onClick={this.onClick.bind(this)}/>
