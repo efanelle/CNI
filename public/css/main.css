@@ -1,5 +1,5 @@
 body {
-  background-color: #71C6C2
+  background-color: lightgray
 }
 button {
   margin-right:1%;
@@ -7,7 +7,7 @@ button {
   margin-bottom: 4%;
 }
 a {
-  color:#015249;
+  color:whitesmoke;
 }
 #boldNess {
   opacity: 1;
@@ -23,7 +23,7 @@ a {
   font-size: 3.5em;
 }
 .home {
-  background-color:#015249;
+  background-color:#304D6D;
   color:white;
 }
 .icon {
@@ -53,9 +53,9 @@ a {
 .jumbotron {
   padding-left:2%;
   padding-bottom:2%;
-  background-color:#015249;
+  background-color:#EA5865;
   font-family: 'Raleway', sans-serif;
-  border: 2px solid teal;
+  border: 2px solid #E52434;
   color:white;
 }
 
@@ -76,23 +76,28 @@ a {
 .nav {
   margin-bottom: 1%;
 }
+.navbar {
+  background-color: #304D6D;
+}
 .nearshore {
   background:url("/assets/drmap3.png");
-  background-color:lightcyan;
+  background-color:whitesmoke;
   background-size:100%;
   background-repeat: no-repeat;
   /*background-attachment: fixed;*/
   background-position: center; 
   color:black;
+  border: 1px solid #a5a5b1;
 }
 /*.odd {
   background-color:#337ab7;
 }*/
 .offshore {
   background:url("/assets/chinamap3.png") no-repeat center center;
-  background-color:lightcyan;
+  background-color:whitesmoke;
   background-size:100%;
   color:black;
+  border: 1px solid #a5a5b1;
 }
 .opportunity {
   background-color:rgba(233, 233, 233, .8);
@@ -122,9 +127,10 @@ a {
 }
 .reshore {
   background:url("/assets/usamap2.png") no-repeat center center;
-  background-color:lightcyan;
+  background-color:whitesmoke;
   background-size:100%;
   color:black;
+  border: 1px solid #a5a5b1;
 }
 .smallhd{
   font-size: 2.5em !important;
