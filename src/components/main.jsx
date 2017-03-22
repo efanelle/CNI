@@ -9,6 +9,7 @@ import Nearshore from './nearshore.jsx'
 import Services from './services.jsx'
 import USA from './usa.jsx'
 import About from './about.jsx'
+import Next from './nextsteps.jsx'
 
 
 
@@ -80,6 +81,13 @@ class App extends React.Component {
         <div>
           <Navi open={this.open.bind(this)} nav={this.state} onClick={this.onClick.bind(this)}/>
           <About />
+        </div>
+      );
+    } else if(this.state.page === 'next') {
+      return(
+        <div>
+          <Navi open={this.open.bind(this)} nav={this.state} onClick={this.onClick.bind(this)}/>
+          <Next />
         </div>
       );
     } 

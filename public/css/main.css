@@ -12,6 +12,9 @@ a {
 #boldNess {
   opacity: 1;
 }
+.about{
+  margin-bottom:0;
+}
 .carousel-inner>.item>img {
   width:80%;
   margin-left:10%
@@ -50,6 +53,12 @@ a {
   /*width:200%;*/
   
 /*}*/
+.info{
+  background-color:#D5DFE5;
+  padding:2%;
+  margin-top:0;
+  color:#034078;
+}
 .jumbotron {
   padding-left:2%;
   padding-bottom:2%;
@@ -57,6 +66,12 @@ a {
   font-family: 'Raleway', sans-serif;
   border: 2px solid #033B6E;
   color:white;
+}
+.jumbotron .about{
+  margin-bottom:0;
+}
+.links a{
+  color: blue;
 }
 
 .list {
@@ -72,7 +87,6 @@ a {
   margin-right:1%;
   text-align:center;  
   font-family:'Fjalla One', sans-serif;
-
 }
 /*.nav {
   margin-bottom: 1%;
