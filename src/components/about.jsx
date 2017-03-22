@@ -42,10 +42,10 @@ const About = React.createClass({
         <div className='prosandcons'>
 
           <div className='sub1'>
-            <Panel>1.   Plug our labor rates into your financial model</Panel>
-            <Panel>2.   Develop cost model to determine competitive potential</Panel>
-            <Panel>3.   Have your product or process evaluated </Panel>
-            <Panel>4.   Identify best approach to maximize your profitability
+            <Panel>Plug our labor rates into your financial model</Panel>
+            <Panel>Develop cost model to determine competitive potential</Panel>
+            <Panel>Have your product or process evaluated </Panel>
+            <Panel>Identify best approach to maximize your profitability
             <ul>
                 <li>Manual Operations</li>
                 <ul>
