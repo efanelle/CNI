@@ -8,7 +8,7 @@ const USA = () => (
     <p>     </p>
     </Jumbotron>
     <Panel header="Market Trends" eventKey="1">
-      <p>At USA Reshoing Management, we support the "Made in the USA" initiatives.  Click on the links below to learn more about Nearshoring and it's benefits.</p>
+      <p>At USA Nearshoring Management, we support the "Made in the USA" initiatives.  Click on the links below to learn more about Nearshoring and it's benefits.</p>
       <ul className="links">
         <li><a href="http://www.virgocapital.com/the-emergence-of-nearshoring/">Emergence of Nearshoring</a></li>
         <li><a href="http://mhlnews.com/global-supply-chain/why-nearshoring-better-option-north-american-companies">Nearshoring as a Better Option</a></li>
