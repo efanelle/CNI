@@ -33,7 +33,7 @@ class Navi extends React.Component {
       <div className='navbar'>
         <Nav fixedTop="true" bsStyle="tabs" activeKey={'home'} onSelect={handleSelect}>
           <NavItem eventKey={'home'} href="/home" onClick={this.childOnClick.bind(this)} title='home'>UNM</NavItem>
-          <NavDropdown eventKey="options" title="Earlier Options" id="nav-dropdown">
+          <NavDropdown eventKey="options" title="Labor Options" id="nav-dropdown">
             <MenuItem eventKey="offshore" onClick={this.childOnClick.bind(this)} title="offshore">Offshoring</MenuItem>
             <MenuItem eventKey="reshore" onClick={this.childOnClick.bind(this)} title="reshore">Reshoring</MenuItem>
           </NavDropdown>

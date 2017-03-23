@@ -59,7 +59,7 @@ const About = React.createClass({
             Responsible for managing multiple offshore manufacturing facilities and all facets of supply chain management.</p>
           <p>The electronic circuit boards used in the EAS system required labor intensive board stuffing in the absence of automation.  
             Another critical labor operation was the assembly and ultrasonic welding of security tags used as a detection device with the system.  
-            At Checkpoint, Larry leveraged what was known as a twin plant concept, using the Dominican for labor intensive operations, 
+            At Checkpoint, we leveraged what was known as a twin plant concept, using the Dominican for labor intensive operations, 
             and assembly in Puerto Rico, to deliver a competitive alternative to China manufacturing. </p>
         </div>
 
