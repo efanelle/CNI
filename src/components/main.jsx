@@ -22,7 +22,6 @@ class App extends React.Component {
     };
   }
   onClick(button) {
-    console.log(button)
     this.setState({page: button})
   }
   close() {
