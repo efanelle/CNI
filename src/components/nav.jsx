@@ -37,8 +37,6 @@ class Navi extends React.Component {
             <MenuItem eventKey="offshore" onClick={this.childOnClick.bind(this)} title="offshore">Offshoring</MenuItem>
             <MenuItem eventKey="reshore" onClick={this.childOnClick.bind(this)} title="reshore">Reshoring</MenuItem>
           </NavDropdown>
-          {/*<NavItem eventKey={'offshore'} onClick={this.childOnClick.bind(this)} title="offshore">Offshoring Option</NavItem>*/}
-          {/*<NavItem eventKey={'reshore'} onClick={this.childOnClick.bind(this)} title="reshore">Reshoring Option</NavItem>*/}
           <NavItem eventKey={'nearshore'} onClick={this.childOnClick.bind(this)} title="nearshore">Nearshoring Option</NavItem>        
           <NavItem eventKey={'usa'} onClick={this.childOnClick.bind(this)} title="usa">Why Nearshoring?</NavItem>                  
           <NavItem eventKey={'services'} onClick={this.childOnClick.bind(this)} title="services">Services</NavItem>
