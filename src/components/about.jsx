@@ -1,6 +1,7 @@
 import React from 'react';
 import { Modal, Popover, Tooltip, Button, OverlayTrigger, PageHeader, Jumbotron, Panel } from 'react-bootstrap'
 
+// const time = './assets/time.png'
 const larry = './assets/larry.jpg'
 const About = React.createClass({
   getInitialState() {
@@ -38,7 +39,8 @@ const About = React.createClass({
           </div>
         </Jumbotron>
         <div className='info'>
-          <img className = 'larry' src={larry}></img>
+          {/*<img className="icon" src={customer}></img>*/}
+          <img className="larry" src={larry}></img>
           <h4>Larry Fanelle is a dynamic Supply Chain Executive with over 30 years experience managing manufacturing, logistics, and coordination of various
             fulfillment activities in the Caribbean.</h4>
           <h5><strong>Professional Background</strong></h5>
