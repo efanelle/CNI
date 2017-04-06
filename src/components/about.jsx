@@ -2,7 +2,7 @@ import React from 'react';
 import { Modal, Popover, Tooltip, Button, OverlayTrigger, PageHeader, Jumbotron, Panel } from 'react-bootstrap'
 
 // const time = './assets/time.png'
-const larry = './assets/Larry.jpg'
+const larry = '../assets/Larry.jpg'
 const About = React.createClass({
   getInitialState() {
     return { showModal: false };

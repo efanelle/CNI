@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Jumbotron, Button, Well } from 'react-bootstrap'
 
-const customer = './assets/customer2.png'
-const time = './assets/time.png'
+const customer = '../assets/customer2.png'
+const time = '../assets/time.png'
 
 
 const Home = () => (
