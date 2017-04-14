@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MyTheme from '../theme/theme.js'
@@ -31,28 +31,23 @@ class Navi extends React.Component {
     // selected = tab;
     console.log(tab)
     this.setState({'tab': tab})
-    return <Link to={tab}>{this.state.tab}</Link>
   }
-  // onClick(e) {
-  //   var page = e.currentTarget.title
-  //   this.props.onClick.call(null, page)
-  // }
-// {this.props.onClick.bind(null, 'about')
+
   render(){
     var currentPath = location.pathname.split('').slice(1).join('');
     if(currentPath === '') {
       currentPath = 'home'
     }
-    // <Link to='/'>UNM</Link>
+
     return (   
       <div className='navbar'>
-        <NavItem eventKey={'home'} title="home" onClick={this.onClick.bind(this)}></NavItem>
         <Nav bsStyle="tabs" activeKey={currentPath} onSelect={handleSelect}>
+        <NavItem eventKey={'home'} title="" onClick={this.props.onClick.bind(this)}><Link to='/'>UNM</Link></NavItem>
           <NavDropdown eventKey={"options"} title="Labor Options" id="nav-dropdown">
-            <MenuItem eventKey={"offshore"} onClick={this.onClick.bind(this)} title="offshore"><Link to='/offshore'>Offshoring</Link></MenuItem>
-            <MenuItem eventKey={"reshore"} onClick={this.onClick.bind(this)} title="reshore"><Link to='/reshore'>Reshoring</Link></MenuItem>
+            <MenuItem eventKey={"offshore"} onClick={this.onClick.bind(this)} title="offshore" className='drpdwn'><Link to='/offshore'>Offshoring</Link></MenuItem>
+            <MenuItem eventKey={"reshore"} onClick={this.onClick.bind(this)} title="reshore" className='drpdwn'><Link to='/reshore'>Reshoring</Link></MenuItem>
           </NavDropdown>
-          <NavItem eventKey={"nearshore"} onClick={this.onClick.bind(this)} onClick={this.onClick.bind(this)} title="nearshore"><Link to='/nearshore'>Nearshoring Option</Link></NavItem>        
+          <NavItem eventKey={"nearshore"} onClick={this.onClick.bind(this)} title="nearshore"><Link to='/nearshore'>Nearshoring Option</Link></NavItem>        
           <NavItem eventKey={"usa"} onClick={this.onClick.bind(this)} title="usa"><Link to='/usa'>Why Nearshoring?</Link></NavItem>                  
           <NavItem eventKey={"services"} onClick={this.onClick.bind(this)} title="services"><Link to='/services'>Services</Link></NavItem>
           <NavItem eventKey={'next'} onClick={this.onClick.bind(this)} title="next"><Link to='/next'>Next Steps</Link></NavItem>
