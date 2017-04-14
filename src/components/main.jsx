@@ -25,7 +25,7 @@ class App extends React.Component {
   }
   onClick(button) {
     this.setState({tab: button})
-    console.log('button', button)
+    // console.log('button', button)
   }
   // close() {
   //   this.setState({ showModal: false });

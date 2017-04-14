@@ -29,7 +29,6 @@ class Navi extends React.Component {
     let tab = e.currentTarget.title;
     // localStorage.setItem('selected', tab);
     // selected = tab;
-    console.log(tab)
     this.setState({'tab': tab})
   }
 
