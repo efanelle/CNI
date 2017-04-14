@@ -7,8 +7,6 @@ import AppBar from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
 import {Nav, NavItem, Navbar, NavDropdown, MenuItem} from 'react-bootstrap'
 
-
-
 function handleTouchTap() {
   console.log('onTouchTap triggered on the title component');
 }
@@ -16,33 +14,46 @@ function handleTouchTap() {
 function handleSelect(selectedKey) {
   return selectedKey;
 }
-
-
+var selected;
 class Navi extends React.Component {
     constructor(props){
     super(props);
+    this.state = {
+      tab: 'home'
+    }
   }
-
-  // childOnClick(e) {
+  componentWillMount() {
+    selected = localStorage.getItem('selected') || 'home';
+  }
+  onClick(e) {
+    let tab = e.currentTarget.title;
+    localStorage.setItem('selected', tab);
+    selected = tab;
+    this.setState({'tab': tab})
+  }
+  // onClick(e) {
   //   var page = e.currentTarget.title
   //   this.props.onClick.call(null, page)
   // }
 // {this.props.onClick.bind(null, 'about')
-    
-  render(){    
+  render(){
+    var currentPath = location.pathname.split('').slice(1).join('');
+    if(currentPath === '') {
+      currentPath = 'home'
+    }
     return (   
       <div className='navbar'>
-        <Nav bsStyle="tabs" activeKey={'home'} onSelect={handleSelect}>
-          <NavItem eventKey={'home'} ><Link to='/'>UNM</Link></NavItem>
-          <NavDropdown eventKey="options" title="Labor Options" id="nav-dropdown">
-            <MenuItem eventKey="offshore"><Link to='/offshore'>Offshoring</Link></MenuItem>
-            <MenuItem eventKey="reshore"><Link to='/reshore'>Reshoring</Link></MenuItem>
+        <Nav bsStyle="tabs" activeKey={currentPath} onSelect={handleSelect}>
+          <NavItem eventKey={'home'} title="home" onClick={this.onClick.bind(this)}><Link to='/'>UNM</Link></NavItem>
+          <NavDropdown eventKey={"options"} title="Labor Options" id="nav-dropdown">
+            <MenuItem eventKey={"offshore"} onClick={this.onClick.bind(this)} title="offshore"><Link to='/offshore'>Offshoring</Link></MenuItem>
+            <MenuItem eventKey={"reshore"} onClick={this.onClick.bind(this)} title="reshore"><Link to='/reshore'>Reshoring</Link></MenuItem>
           </NavDropdown>
-          <NavItem><Link to='/nearshore'>Nearshoring Option</Link></NavItem>        
-          <NavItem><Link to='/usa'>Why Nearshoring?</Link></NavItem>                  
-          <NavItem><Link to='/services'>Services</Link></NavItem>
-          <NavItem eventKey={'next'}><Link to='/next'>Next Steps</Link></NavItem>
-          <NavItem eventKey={'about'}><Link to='/about'>About Us</Link></NavItem>
+          <NavItem eventKey={"nearshore"} onClick={this.onClick.bind(this)} onClick={this.onClick.bind(this)} title="nearshore"><Link to='/nearshore'>Nearshoring Option</Link></NavItem>        
+          <NavItem eventKey={"usa"} onClick={this.onClick.bind(this)} title="usa"><Link to='/usa'>Why Nearshoring?</Link></NavItem>                  
+          <NavItem eventKey={"services"} onClick={this.onClick.bind(this)} title="services"><Link to='/services'>Services</Link></NavItem>
+          <NavItem eventKey={'next'} onClick={this.onClick.bind(this)} title="next"><Link to='/next'>Next Steps</Link></NavItem>
+          <NavItem eventKey={'about'} onClick={this.onClick.bind(this)} title="about"><Link to='/about'>About Us</Link></NavItem>
         </Nav>
       </div>
     )

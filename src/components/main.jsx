@@ -17,26 +17,27 @@ import Next from './nextsteps.jsx'
 class App extends React.Component {
   constructor(props){
     super(props);
-  //   this.state = {
-  //     page: 'home',
-  //     showModal: false
-  //   };
-  // }
-  // onClick(button) {
-  //   this.setState({page: button})
-  // }
+    this.state = {
+      tab: 'home',
+      // showModal: false
+    };
+  }
+  onClick(button) {
+    this.setState({tab: button})
+    console.log('button', button)
+  }
   // close() {
   //   this.setState({ showModal: false });
   // }
   // open() {
   //   this.setState({ showModal: true });
-  }
+  // }
 
   render(){
     return (
       <Router>
         <div>
-          <Navi />
+          <Navi nav={this.state} onClick={this.onClick.bind(this)}/>
           <Route exact path='/' component={Home} />
           <Route path='/offshore' component={Offshore} />
           <Route path='/reshore' component={Reshore} />
