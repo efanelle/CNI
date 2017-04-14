@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+// import { browserHistory } from 'react-router'
 import Navi from './nav.jsx'
 import PicCarousel from './carousel.jsx'
 import Home from './home.jsx'

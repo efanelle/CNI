@@ -27,9 +27,11 @@ class Navi extends React.Component {
   }
   onClick(e) {
     let tab = e.currentTarget.title;
-    localStorage.setItem('selected', tab);
-    selected = tab;
+    // localStorage.setItem('selected', tab);
+    // selected = tab;
+    console.log(tab)
     this.setState({'tab': tab})
+    return <Link to={tab}>{this.state.tab}</Link>
   }
   // onClick(e) {
   //   var page = e.currentTarget.title
@@ -41,10 +43,11 @@ class Navi extends React.Component {
     if(currentPath === '') {
       currentPath = 'home'
     }
+    // <Link to='/'>UNM</Link>
     return (   
       <div className='navbar'>
+        <NavItem eventKey={'home'} title="home" onClick={this.onClick.bind(this)}></NavItem>
         <Nav bsStyle="tabs" activeKey={currentPath} onSelect={handleSelect}>
-          <NavItem eventKey={'home'} title="home" onClick={this.onClick.bind(this)}><Link to='/'>UNM</Link></NavItem>
           <NavDropdown eventKey={"options"} title="Labor Options" id="nav-dropdown">
             <MenuItem eventKey={"offshore"} onClick={this.onClick.bind(this)} title="offshore"><Link to='/offshore'>Offshoring</Link></MenuItem>
             <MenuItem eventKey={"reshore"} onClick={this.onClick.bind(this)} title="reshore"><Link to='/reshore'>Reshoring</Link></MenuItem>
