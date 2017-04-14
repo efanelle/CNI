@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+// import { browserHistory } from 'react-router'
 import Navi from './nav.jsx'
 import PicCarousel from './carousel.jsx'
 import Home from './home.jsx'
@@ -17,22 +19,40 @@ class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      page: 'home',
-      showModal: false
+      tab: 'home',
+      // showModal: false
     };
   }
   onClick(button) {
-    this.setState({page: button})
+    this.setState({tab: button})
+    console.log('button', button)
   }
-  close() {
-    this.setState({ showModal: false });
-  }
-  open() {
-    this.setState({ showModal: true });
-  }
+  // close() {
+  //   this.setState({ showModal: false });
+  // }
+  // open() {
+  //   this.setState({ showModal: true });
+  // }
 
   render(){
-    if(this.state.page === 'home') {        
+    return (
+      <Router>
+        <div>
+          <Navi nav={this.state} onClick={this.onClick.bind(this)}/>
+          <Route exact path='/' component={Home} />
+          <Route path='/offshore' component={Offshore} />
+          <Route path='/reshore' component={Reshore} />
+          <Route path='/nearshore' component={Nearshore} />
+          <Route path='/usa' component={USA} />
+          <Route path='/services' component={Services} />
+          <Route path='/next' component={Next} />
+          <Route path='/about' component={About} />
+        </div>
+      </Router>
+    )
+
+
+    /*if(this.state.page === 'home') {        
       return(
         <div>
           <Navi nav={this.state} onClick={this.onClick.bind(this)}/>
@@ -89,7 +109,7 @@ class App extends React.Component {
           <Next />
         </div>
       );
-    } 
+    } */
   }
 }
 

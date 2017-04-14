@@ -1,6 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { Jumbotron, Button, Panel } from 'react-bootstrap'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Jumbotron, Button, Panel } from 'react-bootstrap';
+import PicCarousel from './carousel.jsx';
 
 
 const Services = () => (
@@ -32,6 +33,7 @@ const Services = () => (
         </ul>
       </Panel>
     </div>
+    <PicCarousel />
   </div>
 );
 

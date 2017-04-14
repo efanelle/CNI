@@ -18,13 +18,18 @@ const USA = () => (
     </Panel>
       <div className="list">
         <div className = "opportunity">
-          <p>At USA Nearshoring Management, we offer a turnkey solution to labor intensive or simple assembly
-          operations in the Caribbean (Nearshoring). Our talented, trained, experienced personnel and management provide a proven logistics model, 
-          which is key to bridging the lead time gap. Managing the relationship becomes routine because of UNM's ability to manage your domestic requirements 
-          effectively.  </p>
+          <p>At USA Nearshoring Management we support the Made in the USA initiatives through profitable alternatives to 
+            Asian manufacturing solutions. We promote an ideal combination of leveraging cost effective labor markets in the 
+            Caribbean and world class technology in the US manufacturing environment.</p>
         </div>
       </div>
   </div>
 );
 
 module.exports = USA;
+
+         
+//   At USA Nearshoring Management, we offer a turnkey solution to labor intensive or simple assembly
+// operations in the Caribbean (Nearshoring). Our talented, trained, experienced personnel and management provide a proven logistics model, 
+// which is key to bridging the lead time gap. Managing the relationship becomes routine because of UNM's ability to manage your domestic requirements 
+// effectively.  
