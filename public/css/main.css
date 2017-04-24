@@ -43,7 +43,7 @@ span {
   align-content:space-around;
 }
 .images img {
-  width:100%;
+  width:90%;
   flex-grow: 1;
   align-content: space-between;
   justify-content:center;

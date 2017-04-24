@@ -32,7 +32,7 @@ class App extends React.Component {
       <Router>
         <div>
           <Navi nav={this.state} onClick={this.onClick.bind(this)}/>
-          <Route path='/' component={Home} />
+          <Route exact path='/' component={Home} />
           <Route path='/offshore' component={Offshore} />
           <Route path='/reshore' component={Reshore} />
           <Route path='/nearshore' component={Nearshore} />

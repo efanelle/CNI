@@ -18,9 +18,7 @@ class Next extends React.Component{
   }
 
   open(e) {
-    console.log(e.currentTarget.title);
     this.setState({ showModal: true, img: e.currentTarget.title });
-    console.log(this.state)
   }
 
   render() {
