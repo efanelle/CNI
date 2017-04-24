@@ -7,7 +7,6 @@ button {
   margin-bottom: 4%;
 }
 span {
-   /*content : "  "; two spaces*/
    margin-right: 7px;
 }
 #boldNess {
@@ -169,6 +168,7 @@ span {
   justify-content: center;
   align-content:space-around;
   margin-bottom: 10%;
+  flex-wrap: wrap;
 }
 .reshore {
   background:url("/assets/usamap2.png") no-repeat center center;
