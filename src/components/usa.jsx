@@ -18,8 +18,8 @@ const USA = () => (
     </Panel>
       <div className="list">
         <div className = "opportunity">
-          <p>At USA Nearshoring Management we support the Made in the USA initiatives through profitable alternatives to 
-            Asian manufacturing solutions. We promote an ideal combination of leveraging cost effective labor markets in the 
+          <p><span>At USA Nearshoring Management we support the "Made in the USA" initiatives through profitable alternatives to 
+            Asian manufacturing solutions.</span> We promote an ideal combination of leveraging cost effective labor markets in the 
             Caribbean and world class technology in the US manufacturing environment.</p>
         </div>
       </div>
