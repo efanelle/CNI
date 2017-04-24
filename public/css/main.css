@@ -37,16 +37,16 @@ span {
 .images {
   display:flex;
   flex-direction: column;
-  justify-content: center;
-  align-items:flex-start;
+  justify-content: space-around;
+  align-items:center;
   align-content:space-around;
 }
 .images img {
   width:90%;
-  flex-grow: 1;
+  flex-grow: 0;
   align-content: space-between;
   justify-content:center;
-  height:350px;
+  /*height:350px;*/
 }
 .images :hover {
   cursor:pointer;
