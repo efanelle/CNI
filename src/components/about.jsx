@@ -1,11 +1,12 @@
 import React from 'react';
+import axios from 'axios';
 import { Modal, Popover, Tooltip, Button, OverlayTrigger, PageHeader, Jumbotron, Panel } from 'react-bootstrap'
 
-// const time = './assets/time.png'
+const $ = require('jquery');
 const larry = '../assets/Larry.jpg'
 const About = React.createClass({
   getInitialState() {
-    return { showModal: false };
+    return { showModal: false};
   },
 
   close() {
@@ -14,6 +15,27 @@ const About = React.createClass({
 
   open() {
     this.setState({ showModal: true });
+  },
+  submit(e) {
+    e.preventDefault()
+    var data = {
+      name: document.getElementById('VisitorName').value,
+      emailAddress: document.getElementById('email').value,
+      phone: document.getElementById('phone').value
+    }
+    if(!data.name || !data.emailAddress) {
+      alert('Please fill in required fields')
+      return
+    }
+    document.getElementById('VisitorName').value = ''
+    document.getElementById('email').value = ''
+    document.getElementById('phone').value = ''
+
+    axios.post('/users', data)
+    .then(function(res) {
+      console.log(res);
+    })
+    this.close();
   },
 
   render() {
@@ -29,7 +51,6 @@ const About = React.createClass({
           </div>
         </Jumbotron>
         <div className='info'>
-          {/*<img className="icon" src={customer}></img>*/}
           <img className="larry" src={larry}></img>
           <h4>Larry Fanelle is a dynamic Supply Chain Executive with over 30 years experience managing manufacturing, logistics, and coordination of various
             fulfillment activities in the Caribbean.</h4>
@@ -63,15 +84,33 @@ const About = React.createClass({
             <Modal.Title>Contact Larry Fanelle</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <div className="links">
+            {/*<div className="links">
               <h5>Phone</h5>
               <p>267-230-1673</p>
               <h5>Email</h5>
               <a href="mailto:lfanelle@gmail.com">lfanelle@gmail.com</a>
+            </div>*/}
+
+            <div className="links">
+              <form>
+                <label><span>*Name: </span></label>
+                <input required type="text" id="VisitorName" name="VisitorName"/>
+                <br />
+                <br />
+                <label><span>*Email Address: </span></label>
+                <input required type="text" id="email" name="emailAddress"/>
+                <br />
+                <br />
+                <label><span>Phone Number: </span></label>
+                <input type="text" id="phone" name="phone"/>
+                <br />
+                <br />
+                <h6>*Required field</h6>
+              </form>
             </div>
           </Modal.Body>
           <Modal.Footer>
-            <Button onClick={this.close}>Close</Button>
+            <Button onClick={this.submit}> Submit</Button>
           </Modal.Footer>
         </Modal>
       </div>
