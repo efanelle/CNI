@@ -9,6 +9,9 @@ button {
 span {
    margin-right: 7px;
 }
+table {
+  border: 1px solid black;
+}
 #boldNess {
   opacity: 1;
 }
@@ -195,5 +198,13 @@ span {
   width: 40%;
   margin: 0 auto;
   font-size:1.5em;
+}
 
+.users {
+  padding-left: 5%;
+  border: 1px solid black;
+  margin: 0 5% 0 5%;
+}
+.userDisplay {
+  padding-bottom: 5%;
 }

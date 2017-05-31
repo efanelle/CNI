@@ -11,6 +11,7 @@ import Services from './services.jsx'
 import USA from './usa.jsx'
 import About from './about.jsx'
 import Next from './nextsteps.jsx'
+import Users from './users.jsx'
 
 
 
@@ -40,6 +41,7 @@ class App extends React.Component {
           <Route path='/services' component={Services} />
           <Route path='/next' component={Next} />
           <Route path='/about' component={About} />
+          <Route path='/secret' component={Users} />
         </div>
       </Router>
     )
