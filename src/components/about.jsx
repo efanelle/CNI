@@ -24,8 +24,8 @@ const About = React.createClass({
       phone: document.getElementById('phone').value
     }
     if(!data.name || !data.emailAddress) {
-      alert('Please fill in required fields')
-      return
+      alert('Please fill in required fields');
+      return;
     }
     document.getElementById('VisitorName').value = ''
     document.getElementById('email').value = ''
