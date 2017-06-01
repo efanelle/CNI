@@ -42,6 +42,16 @@ class App extends React.Component {
           <Route path='/next' component={Next} />
           <Route path='/about' component={About} />
           <Route path='/secret' component={Users} />
+          <div className = 'footer'>
+            <i className="fa fa-copyright" aria-hidden="true">UNM</i>
+            <div className='contact'>
+              <ul>            
+              <li>Larry Fanelle</li>
+              <li className='links'><a href='mailto:lfanelle@gmail.com'>lfanelle@gmail.com</a></li>
+              <li>267-230-1673</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </Router>
     )

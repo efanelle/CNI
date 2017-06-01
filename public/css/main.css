@@ -25,6 +25,21 @@ table {
 .center {
   text-align: center;
 }
+.contact {
+  float:right;
+  padding-right:2%;
+  padding-top:1%;
+}
+.contact>ul {
+  list-style: none;
+}
+.footer {
+  height: 15%;
+  width:100%;
+  background-color: #F05D5E;
+  margin-top:5%;
+  position:absolute;
+}
 #header {
   font-size: 3.5em;
 }
