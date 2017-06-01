@@ -21,7 +21,8 @@ const About = React.createClass({
     var data = {
       name: document.getElementById('VisitorName').value,
       emailAddress: document.getElementById('email').value,
-      phone: document.getElementById('phone').value
+      phone: document.getElementById('phone').value,
+      text: document.getElementById('text').value
     }
     if(!data.name || !data.emailAddress) {
       alert('Please fill in required fields');
@@ -30,11 +31,11 @@ const About = React.createClass({
     document.getElementById('VisitorName').value = ''
     document.getElementById('email').value = ''
     document.getElementById('phone').value = ''
+    document.getElementById('text').value = ''
 
     axios.post('/users', data)
-    .then(function(res) {
-      console.log(res);
-    })
+    // .then(function(res) {
+    // })
     this.close();
   },
 
@@ -105,6 +106,11 @@ const About = React.createClass({
                 <input type="text" id="phone" name="phone"/>
                 <br />
                 <br />
+                <label><span>Questions/Comments:</span></label>
+                <br />
+                <textarea type="text" id="text" name="text"/>
+                <br />
+                <br />                
                 <h6>*Required field</h6>
               </form>
             </div>

@@ -32,7 +32,8 @@ app.post('/users', function(req, res) {
   var user = new User({
     name: req.body.name,
     emailAddress: req.body.emailAddress,
-    phone: req.body.phone
+    phone: req.body.phone,
+    text: req.body.text
   })
   .save(function(err, user) {
     if(err) throw err

@@ -36,6 +36,7 @@ class Users extends React.Component {
           <h5>{user.name}</h5>
           <h6>{user.emailAddress}</h6>
           <h6>{user.phone}</h6>
+          <h6>{user.text}</h6>
         </div>
     })
     console.log(display)
