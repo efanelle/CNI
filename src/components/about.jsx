@@ -82,7 +82,7 @@ const About = React.createClass({
 
         <Modal show={this.state.showModal} onHide={this.close}>
           <Modal.Header closeButton>
-            <Modal.Title>Contact Larry Fanelle</Modal.Title>
+            {/* <Modal.Title>Contact Larry Fanelle</Modal.Title> */}
           </Modal.Header>
           <Modal.Body>
             {/*<div className="links">
