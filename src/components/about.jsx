@@ -6,6 +6,7 @@ const $ = require('jquery');
 const larry = '../assets/Larry.jpg'
 const About = React.createClass({
   getInitialState() {
+    console.log('test modal')
     return { showModal: false};
   },
 
