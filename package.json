@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.16.1",
+    "body-parser": "^1.18.2",
     "express": "^4.14.0",
     "fetch": "^1.1.0",
     "jquery": "^3.2.1",
@@ -35,9 +36,5 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-nodemon": "^0.4.2",
     "open": "0.0.5"
-  },
-  "engines": {
-    "node": "v6.6.0",
-    "npm":"3.10.3"
   }
 }
