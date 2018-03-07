@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 var User = require('./app/models/users');
 
 // setting port
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 3000;
 
 //config files
 var db = require('./config/db');
@@ -46,6 +46,6 @@ app.get('*', function(req, res) {
 })
 
 
-app.listen(port, function() {
+app.listen((process.env.PORT || 5000), function() {
   console.log('Go witness the magic at http://localhost:' + port);
 })
