@@ -10,12 +10,18 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.16.1",
+    "bower": "^1.8.2",
     "express": "^4.14.0",
     "fetch": "^1.1.0",
+    "grunt": "^1.0.2",
+    "grunt-browserify": "^5.2.0",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-nodemon": "^0.4.2",
     "jquery": "^3.2.1",
     "material-ui": "^0.16.7",
     "mongo": "^0.1.0",
-    "mongoose": "^4.10.4",
+    "mongoose": "^4.10.8",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^15.4.2",
@@ -35,5 +41,9 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-nodemon": "^0.4.2",
     "open": "0.0.5"
+  },
+  "engines": {
+    "node": "v6.6.0",
+    "npm": "3.10.3"
   }
 }

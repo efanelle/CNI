@@ -39,7 +39,7 @@ class Navi extends React.Component {
     return (   
       <div className='navbar'>
         <Nav bsStyle="tabs" activeKey={currentPath} onSelect={handleSelect}>
-        <NavItem eventKey={'home'} title="" onClick={this.props.onClick.bind(this)}><Link to='/'>UNM</Link></NavItem>
+          <NavItem eventKey={'home'} title="" onClick={this.props.onClick.bind(this)}><Link to='/'>UNM</Link></NavItem>
           <NavDropdown eventKey={"options"} title="Labor Options" id="nav-dropdown">
             <MenuItem eventKey={"offshore"} onClick={this.onClick.bind(this)} title="offshore" className='drpdwn'><Link to='/offshore'>Offshoring</Link></MenuItem>
             <MenuItem eventKey={"reshore"} onClick={this.onClick.bind(this)} title="reshore" className='drpdwn'><Link to='/reshore'>Reshoring</Link></MenuItem>
